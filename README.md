@@ -10,6 +10,7 @@ Specifically came across this problem when trying to load a CSV file from S3 int
 1. The CSV header names in S3 were slightly different than the column names in Redshift.  
 
 Here is the output of the script in this repo:
+
 ![cleanse-reorder-lists](output-python-list-reorder.png "Cleanse and Reorder Lists")
 
 References: 
