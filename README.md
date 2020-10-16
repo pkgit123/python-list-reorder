@@ -9,7 +9,7 @@ Specifically came across this problem when trying to load a CSV file from S3 int
 1. The order of the columns in CSV were different than column order in Redshift.
 1. The CSV header names in S3 were slightly different than the column names in Redshift.  
 
-The CSV file was created using the Python `csv.DictWriter()` class, based on a json-dictionary retrieved from a Rest API.  
+The CSV file was created using the Python `csv.DictWriter()` class, based on a json-dictionary retrieved from a Rest API.  Fortunately, this class has a `fieldnames` parameter, that customizes the order of the columns in the CSV file.  
 
 Here is the output of the script in this repo:
 
@@ -19,4 +19,5 @@ References:
 * https://stackoverflow.com/questions/29820498/how-to-change-column-ordering-in-amazon-redshift
 * https://docs.aws.amazon.com/redshift/latest/dg/r_COPY_command_examples.html
 * https://docs.aws.amazon.com/redshift/latest/dg/r_COPY.html
+* https://docs.python.org/3/library/csv.html#csv.DictWriter
 
