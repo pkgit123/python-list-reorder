@@ -11,9 +11,9 @@ Specifically came across this problem when trying to load a CSV file from S3 int
 
 Here is the output of the script in this repo:
 
-![cleanse-reorder-lists](output-python-list-reorder.png "Cleanse and Reorder Lists"){
-   border: 1px solid black;
-}
+<table>
+![cleanse-reorder-lists](output-python-list-reorder.png "Cleanse and Reorder Lists")
+</table>
 
 References: 
 * https://stackoverflow.com/questions/29820498/how-to-change-column-ordering-in-amazon-redshift
