@@ -5,9 +5,11 @@ Python lists are ordered.  Situation where two Python lists are identical conten
 
 How to reorder one Python list, so that it exactly matches the other order.  
 
-Specifically came across this problem when trying to load a CSV file from S3 into Redshift.  
+Specifically came across this problem when trying to load a CSV file from S3 into Redshift.   
 1. The order of the columns in CSV were different than column order in Redshift.
 1. The CSV header names in S3 were slightly different than the column names in Redshift.  
+
+The CSV file was created using the Python `csv.DictWriter()` class, based on a json-dictionary retrieved from a Rest API.  
 
 Here is the output of the script in this repo:
 
